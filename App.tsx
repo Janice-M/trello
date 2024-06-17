@@ -5,7 +5,7 @@ import TaskListItem from './src/components/TaskListItem';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>bib !</Text>
+      <TaskListItem />
       <StatusBar style="auto" />
     </View>
   );
