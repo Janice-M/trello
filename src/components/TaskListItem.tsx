@@ -1,4 +1,4 @@
-import { View, Text } from "react-native"
+import { View, Text,StyleSheet } from "react-native"
 
 
 export default function TaskListItem() {
@@ -12,3 +12,13 @@ export default function TaskListItem() {
 
     )
 }
+
+const styles = StyleSheet.create({
+    container:{
+        backgroundColor:'black'
+    },
+
+    text{
+        color:'white'
+    }
+})
