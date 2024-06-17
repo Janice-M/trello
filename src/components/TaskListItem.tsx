@@ -5,7 +5,7 @@ function TaskListItem() {
     return(
         <View>
             <Text>
-                
+                First Task
             </Text>
         </View>
 
