@@ -1,12 +1,12 @@
 import { View, Text,StyleSheet } from "react-native"
+import { AntDesign } from '@expo/vector-icons';
 
 
-export default function TaskListItem() {
+export default function TaskListItem({ task}) {
     return(
         <View style={ styles.container} >
-            <Text style={styles.text}>
-                First Task
-            </Text>
+            <Text style={styles.text}>{task.description}</Text>
+            <AntDesign name="closesquareo" size={16} color="pink" />    
         </View>
 
 
@@ -15,11 +15,16 @@ export default function TaskListItem() {
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor:'black',
+        backgroundColor:'#000435',
         padding: 10,
+        borderRadius: 5,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+
     },
     text: {
-        color:'white'
+        color:'white',
+        fontSize:16,
     }
 
    
