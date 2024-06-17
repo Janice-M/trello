@@ -1,7 +1,7 @@
 import { View, Text } from "react-native"
 
 
-function TaskListItem() {
+export default function TaskListItem() {
     return(
         <View>
             <Text>
