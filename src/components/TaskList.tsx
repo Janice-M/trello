@@ -4,7 +4,11 @@ import { useState } from "react";
 
 
 export default function TaskList() {
-    const [tasks, setTasks] =useState([])
+    const [tasks, setTasks] =useState([
+        {description: 'Second Task'},
+        {description: 'Third Task'},
+        {description: 'Fourth Task'}
+    ])
 
     return(
         <View style={{backgroundColor: '#121f2c', padding:10, borderRadius:8}}>
@@ -13,10 +17,8 @@ export default function TaskList() {
             <FlatList 
                 data={tasks}
                 renderItem={({item}) =><TaskListItem task={item} />}/>
-            <TaskListItem task={{description: 'First Task'}}/>
-            <TaskListItem task={{description: 'Second Task'}}/>
-            <TaskListItem task={{description: 'Third Task'}}  />
-            <TaskListItem task={{description: 'Fourth Task'}} />
+           
+         
 
              {/*the new task input */}
 
