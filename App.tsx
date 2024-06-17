@@ -8,10 +8,7 @@ export default function App() {
       
       <View style={{padding: 10 }}>
       <TaskList />
-      <TaskListItem task={{description: 'First Task'}}/>
-      <TaskListItem task={{description: 'Second Task'}}/>
-      <TaskListItem task={{description: 'Third Task'}}  />
-      <TaskListItem task={{description: 'Fourth Task'}} />
+     
       </View>
       
 
