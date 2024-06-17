@@ -16,6 +16,7 @@ export default function TaskList() {
             {/*the list of tasks */}
             <FlatList 
                 data={tasks}
+                contentContainerStyle={{gap:7}}
                 renderItem={({item}) =><TaskListItem task={item} />}/>
            
          
