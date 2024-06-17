@@ -4,11 +4,12 @@ import TaskListItem from './src/components/TaskListItem';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <TaskListItem />
+      
       <StatusBar style="auto" />
-      <SafeAreaView />
-    </View>
+      
+    </SafeAreaView>
   );
 }
 
