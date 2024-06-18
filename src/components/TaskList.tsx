@@ -5,9 +5,9 @@ import { useState } from "react";
 
 export default function TaskList() {
     const [tasks, setTasks] =useState([
-        {description: 'Second Task'},
-        {description: 'Third Task'},
-        {description: 'Fourth Task'}
+        {description: 'Take cats to vet'},
+        {description: 'Madrassa'},
+        {description: 'Fou'}
     ])
 
     return(
