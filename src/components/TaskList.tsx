@@ -7,7 +7,7 @@ export default function TaskList() {
     const [tasks, setTasks] =useState([
         {description: 'Take cats to vet'},
         {description: 'Madrassa'},
-        {description: ''}
+        {description: ' Pilates'}
     ])
 
     return(
