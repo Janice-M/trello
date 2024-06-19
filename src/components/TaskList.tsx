@@ -12,9 +12,12 @@ export default function TaskList() {
     const [newTask, setNewTask] =useState ('')
 
 
-    const createTask = () =>
-        console.warn('hello Rafiki', newTask);
-        setNewTask([... tasks, { description: newTask} ]);
+    const createTask = () => {
+        
+        setNewTask([...tasks, {description: newTask}]);
+
+        setNewTask('');
+    };
 
     return(
         <View style={{backgroundColor: '#121f2c', padding:16, borderRadius:8, gap:5 }}>
