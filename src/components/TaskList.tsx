@@ -28,6 +28,7 @@ export default function TaskList() {
 
              {/*the new task input */}
                 <TextInput
+                 value={newTask}
                  placeholder="New Task" 
                  placeholderTextColor="grey" 
                  style ={{color:'white',
