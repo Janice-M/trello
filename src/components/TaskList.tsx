@@ -11,7 +11,7 @@ export default function TaskList() {
     ])
 
     const createTask = () =>
-        cons
+        console.warn('oopsie daisy');
 
     return(
         <View style={{backgroundColor: '#121f2c', padding:16, borderRadius:8, gap:5 }}>
