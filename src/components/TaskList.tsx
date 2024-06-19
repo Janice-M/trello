@@ -14,6 +14,7 @@ export default function TaskList() {
 
     const createTask = () =>
         console.warn('hello Rafiki', newTask);
+        setNewTask([... tasks, { description: newTask} ]);
 
     return(
         <View style={{backgroundColor: '#121f2c', padding:16, borderRadius:8, gap:5 }}>
