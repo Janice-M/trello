@@ -10,6 +10,9 @@ export default function TaskList() {
         {description: ' Pilates'}
     ])
 
+    const createTask = () =>
+        cons
+
     return(
         <View style={{backgroundColor: '#121f2c', padding:16, borderRadius:8, gap:5 }}>
 <Text style={{color: 'white', fontWeight:'bold', fontSize: 20, marginVertical:10 }}>My To Dos </Text>
