@@ -1,4 +1,4 @@
-import { View, Text, FlatList, TextInput, Button } from "react-native";
+import { View, Text, FlatList, TextInput, Button, StyleSheet } from "react-native";
 import TaskListItem from "./TaskListItem";
 import { useState } from "react";
 
@@ -20,8 +20,9 @@ export default function TaskList() {
     };
 
     return(
-        <View style={{backgroundColor: '#121f2c', padding:16, borderRadius:8, gap:5 }}>
-<Text style={{color: 'white', fontWeight:'bold', fontSize: 20, marginVertical:10 }}>My To Dos </Text>
+        <View 
+        style={styles.container}>
+<Text style={styles.text}>My To Dos </Text>
             {/*the list of tasks */}
             <FlatList 
                 data={tasks}
@@ -54,3 +55,18 @@ export default function TaskList() {
 
 
 }
+const styles = StyleSheet.create({
+    container:{
+    backgroundColor: '#121f2c',
+     padding:16,
+      borderRadius:8,
+    gap:5
+    },
+
+    text:{ color: 'white', 
+        fontWeight:'bold', 
+        fontSize: 20, 
+        marginVertical:10 }
+
+    
+})
