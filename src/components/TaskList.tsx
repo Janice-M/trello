@@ -9,7 +9,7 @@ export default function TaskList() {
         {description: 'Madrassa'},
         {description: ' Pilates'}
     ])
-    const [newTask] =useState ('')
+    const [newTask, setNewTask] =useState ('')
 
 
     const createTask = () =>
