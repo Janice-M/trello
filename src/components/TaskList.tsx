@@ -11,7 +11,7 @@ export default function TaskList() {
     ])
 
     return(
-        <View style={{backgroundColor: '#121f2c', padding:10, borderRadius:8}}>
+        <View style={{backgroundColor: '#121f2c', padding:16, borderRadius:8, gap:5 }}>
 <Text style={{color: 'white', fontWeight:'bold', fontSize: 20, marginVertical:10 }}>My To Dos </Text>
             {/*the list of tasks */}
             <FlatList 
@@ -22,7 +22,11 @@ export default function TaskList() {
          
 
              {/*the new task input */}
-                <TextInput placeholder="New Task" placeholderTextColor="grey"/>
+                <TextInput placeholder="New Task" placeholderTextColor="grey" style ={{color:'white',
+        padding:16,backgroundColor:'#000435', 
+        borderRadius:5,
+        fontSize:16,
+        }}/>
 
         </View>
     )
