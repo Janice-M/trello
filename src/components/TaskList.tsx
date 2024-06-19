@@ -29,6 +29,7 @@ export default function TaskList() {
              {/*the new task input */}
                 <TextInput
                  value={newTask}
+                 onChangeText={setNewTask}
                  placeholder="New Task" 
                  placeholderTextColor="grey" 
                  style ={{color:'white',
