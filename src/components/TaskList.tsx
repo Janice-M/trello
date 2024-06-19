@@ -22,11 +22,20 @@ export default function TaskList() {
          
 
              {/*the new task input */}
-                <TextInput placeholder="New Task" placeholderTextColor="grey" style ={{color:'white',
-        padding:16,backgroundColor:'#000435', 
-        borderRadius:5,
-        fontSize:16,
-        }}/>
+                <TextInput
+                 placeholder="New Task" 
+                 placeholderTextColor="grey" 
+                 style ={{color:'white',
+                    padding:16,backgroundColor:'#000435', 
+                    borderRadius:5,
+                    fontSize:16,
+              }}/>
+
+             {/*BUTTON*/ } 
+                <Button title="Add Task"
+                onPress={createTask} />
+
+
 
         </View>
     )
