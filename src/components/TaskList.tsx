@@ -22,7 +22,7 @@ export default function TaskList() {
     return(
         <View 
         style={styles.container}>
-<Text style={styles.text}>My To Dos </Text>
+<Text style={styles.title}>My To Dos </Text>
             {/*the list of tasks */}
             <FlatList 
                 data={tasks}
@@ -37,11 +37,7 @@ export default function TaskList() {
                  onChangeText={setNewTask}
                  placeholder="New Task" 
                  placeholderTextColor="grey" 
-                 style ={{color:'white',
-                    padding:16,backgroundColor:'#000435', 
-                    borderRadius:5,
-                    fontSize:16,
-              }}/>
+                 style ={styles.input}/>
 
              {/*BUTTON*/ } 
                 <Button title="Add Task"
@@ -63,10 +59,15 @@ const styles = StyleSheet.create({
     gap:5
     },
 
-    text:{ color: 'white', 
+    title:{ color: 'white', 
         fontWeight:'bold', 
         fontSize: 20, 
-        marginVertical:10 }
+        marginVertical:10 },
+    input:  {color:'white',
+    padding:16,backgroundColor:'#000435', 
+    borderRadius:5,
+    fontSize:16},    
 
+                        
     
 })
