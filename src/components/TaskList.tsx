@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     container:{
     backgroundColor: '#121f2c',
      padding:16,
-      borderRadius:8,
+    borderRadius:8,
     gap:5
     },
 
@@ -63,11 +63,11 @@ const styles = StyleSheet.create({
         fontWeight:'bold', 
         fontSize: 20, 
         marginVertical:10 },
-    input:  {color:'white',
+    input: {color:'white',
     padding:16,backgroundColor:'#000435', 
     borderRadius:5,
-    fontSize:16},    
+    fontSize:16}    
 
-                        
+                         
     
 })
