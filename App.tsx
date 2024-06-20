@@ -11,7 +11,7 @@ export default function App() {
       <Taskboard />
       
 
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
       
     </View>
   );
