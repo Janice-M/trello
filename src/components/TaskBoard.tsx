@@ -1,4 +1,4 @@
-import { View, StyleSheet} from "react-native";
+import { View, StyleSheet, SafeAreaView} from "react-native";
 import TaskList from "./TaskList";
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -13,8 +13,10 @@ export default function Taskboard () {
         style={StyleSheet.absoluteFill}>
        
       </LinearGradient>
-
-      <TaskList />
+        <SafeAreaView>
+        <TaskList />
+        </SafeAreaView>
+      
       </View>
     )
 }

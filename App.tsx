@@ -6,14 +6,14 @@ import Taskboard from './src/components/TaskBoard';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       
       <Taskboard />
       
 
       <StatusBar style="auto" />
       
-    </SafeAreaView>
+    </View>
   );
 }
 
