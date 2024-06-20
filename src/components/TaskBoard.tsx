@@ -1,5 +1,5 @@
 
-export default function Taskboard () => {
+export default function Taskboard () {
     return(
         <View style={{padding: 10 }}>
       <TaskList />
