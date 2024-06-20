@@ -14,7 +14,7 @@ export default function TaskList() {
 
     const createTask = () => {
         
-        setNewTask([...tasks, {description: newTask}]);
+        setNewTask([... tasks, {description: newTask}]);
 
         setNewTask('');
     };
