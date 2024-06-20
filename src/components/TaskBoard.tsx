@@ -9,7 +9,7 @@ export default function Taskboard () {
             
             <LinearGradient
         // Button Linear Gradient
-        colors={['#8711C1', '#2472fc', '#192f6a']}
+        colors={['#8711C1', '#2472fc']}
         style={StyleSheet.absoluteFill}>
        
       </LinearGradient>
