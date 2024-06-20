@@ -5,7 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 export default function Taskboard () {
     return(
-        <View style={{padding: 10 }}>
+        <View style={{padding: 10, flex:1}}>
             
             <LinearGradient
         // Button Linear Gradient
