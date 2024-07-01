@@ -5,15 +5,18 @@ import { Link } from 'expo-router';
 
 export default function TaskListItem({ task}) {
     return(
-        <View style={ styles.container} >
+        
 
-            <Link href={'/details'}>
+     <Link href={'/details'}  asChild >
+             <View style={ styles.container} >
             <Text style={styles.text}>{task.description}</Text> 
-            </Link>
-            
-            <AntDesign name="closesquareo" size={16} color="pink" />    
-        </View>
+            <AntDesign name="closesquareo" size={16} color="pink" />  
+            </View>
 
+    </Link>
+            
+             
+        
 
     )
 }
