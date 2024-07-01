@@ -4,10 +4,10 @@ import {View, Text} from  'react-native';
 
 const TaskDetails = () => {
     return (
-        <View>
+        <View style ={{padding: 15}}>
             <Stack.Screen options={{title : "Task Details"}} />
-            <Text>
-                details
+            <Text style={{ color:'white'}}>
+                details of the chihuahua
             </Text>
         </View>
     );
