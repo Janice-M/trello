@@ -3,20 +3,16 @@ import { Text} from "react-native";
 import {Slot, Stack} from 'expo-router'
 
 export default function RootLayOut(){
-    return (
-
-
-        <>
     
+    return (
+        <>
+        <Stack screenOptions={{}}>
 
-            <Stack screenOptions={{}}>
-                <Stack.Screen name="index" options={{title: 'Todo'}} />
+        </Stack>
 
-            <Stack/>
-
-            <StatusBar style="light" />
-
-
-         </>     
+        <StatusBar style="light" />
+        </>
     );
+    
+    
 }
