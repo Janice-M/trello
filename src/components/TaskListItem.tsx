@@ -1,4 +1,4 @@
-import { View, Text,StyleSheet } from "react-native"
+import { View, Text,StyleSheet, Pressable } from "react-native"
 import { AntDesign } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 
@@ -8,10 +8,10 @@ export default function TaskListItem({ task}) {
         
 
      <Link href={'/details'}  asChild >
-             <View style={ styles.container} >
+             <Pressable style={ styles.container} >
             <Text style={styles.text}>{task.description}</Text> 
             <AntDesign name="closesquareo" size={16} color="pink" />  
-            </View>
+            </Pressable>
 
     </Link>
             
