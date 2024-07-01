@@ -1,11 +1,16 @@
 import { View, Text,StyleSheet } from "react-native"
 import { AntDesign } from '@expo/vector-icons';
+import { Link } from 'expo-router';
 
 
 export default function TaskListItem({ task}) {
     return(
         <View style={ styles.container} >
-            <Text style={styles.text}>{task.description}</Text>
+
+            <Link href={'/details'}>
+            <Text style={styles.text}>{task.description}</Text> 
+            </Link>
+            
             <AntDesign name="closesquareo" size={16} color="pink" />    
         </View>
 

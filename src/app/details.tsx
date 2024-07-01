@@ -8,5 +8,8 @@ const TaskDetails = () => {
                 details
             </Text>
         </View>
-    )
-}
+    );
+};
+
+
+export default TaskDetails;
