@@ -1,5 +1,6 @@
-import { Text } from "react-native";
-import {Slot} from 'react-native'
+import { StatusBar } from "expo-status-bar";
+import { Text} from "react-native";
+import {Slot} from 'expo-router'
 
 export default function RootLayOut(){
     return (
@@ -9,6 +10,8 @@ export default function RootLayOut(){
             </Text>
 
             <Slot />
+
+            <StatusBar style="light" />
 
 
          </>     
