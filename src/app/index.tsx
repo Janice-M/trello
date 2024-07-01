@@ -1,8 +1,18 @@
 import Taskboard from "../components/TaskBoard";
+import { Stack } from "expo-router";
 
 
 export default function HomeScreen(){
 
-    return <Taskboard />;
+    return (
+        <>
+
+    
+            <Stack.Screen options={{title : "Todo Board"}} />
+            <Taskboard />
+
+            </>
+
+    );
 
 }
