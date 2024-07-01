@@ -7,7 +7,7 @@ export default function TaskListItem({ task}) {
     return(
         
 
-     <Link href={'/details'}  asChild >
+     <Link href={'/${task.id}'}  asChild >
              <Pressable style={ styles.container} >
             <Text style={styles.text}>{task.description}</Text> 
             <AntDesign name="closesquareo" size={16} color="pink" />  

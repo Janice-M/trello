@@ -5,9 +5,9 @@ import { useState } from "react";
 
 export default function TaskList() {
     const [tasks, setTasks] =useState([
-        {description: 'Take cats to vet'},
-        {description: 'Madrassa'},
-        {description: ' Pilates'}
+        {id:"123", description: 'Take cats to vet'},
+        {id:"2022", description: 'Madrassa'},
+        {id:"69", description: ' Pilates'}
     ])
     const [newTask, setNewTask] =useState ('')
 
