@@ -6,7 +6,7 @@ const TaskDetails = () => {
     return (
         <View style ={{padding: 15}}>
             <Stack.Screen options={{title : "Task Details"}} />
-            <Text style={{ color:'white'}}>
+            <Text style={{ color:'white', fontSize:20 }}>
                 details of the chihuahua
             </Text>
         </View>
