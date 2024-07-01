@@ -8,7 +8,7 @@ export default function HomeScreen(){
         <>
 
     
-            <Stack.Screen options={{title : "Todo Board"}} />
+            <Stack.Screen options={{title : "Task Board"}} />
             <Taskboard />
 
             </>
