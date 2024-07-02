@@ -1,10 +1,10 @@
 import { BSON, ObjectSchema,Realm } from "realm";
 
-export class Profile extends Realm.Object<Profile> {
+export class Task extends Realm.Object<Task> {
     _id!: BSON.ObjectId;
     name!: string;
     static schema: ObjectSchema = {
-      name: 'Profile',
+      name: 'Task',
       properties: {
         _id: 'objectId',
         name: {type: 'string', indexed: 'full-text'},
