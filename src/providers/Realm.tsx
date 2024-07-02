@@ -6,12 +6,12 @@ export default function RealmCustomProvider({ children }: PropsWithChildren){
     
     return(
         <>
-        <RealmProvider>
+        <RealmProvider schema={[]}>
 
         {children}
 
         </RealmProvider>
         
         </>
-    )
-}
+    );
+};
