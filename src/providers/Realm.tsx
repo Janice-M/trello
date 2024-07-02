@@ -7,7 +7,7 @@ export default function RealmCustomProvider({ children }: PropsWithChildren){
     
     return(
         <>
-        <RealmProvider schema={[]}>
+        <RealmProvider schema={[Task]}>
 
         {children}
 
